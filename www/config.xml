@@ -70,7 +70,7 @@ versionCode = "1">
     
     <preference name="target-device" value="universal" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="ios-statusbarstyle" value="default" />
     <preference name="detect-data-types" value="false" />
     <preference name="exit-on-suspend" value="false" />
 
