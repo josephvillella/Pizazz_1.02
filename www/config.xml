@@ -2,13 +2,13 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "it.venerons.APPLICATION"
-version = "1.0.0"
+version = "1.0.2"
 versionCode = "1">
 
     <name>Pizazz</name>
 
     <description>
-        Pizazz Hair Design - 1.00 - by Joseph Villella
+        Pizazz Hair Design - 1.02 - by Joseph Villella
     </description>
 
     <author email="j_villella@live.ca">Joseph Villella</author>
@@ -62,7 +62,7 @@ versionCode = "1">
         
     <!-- GENERAL PREFERENCES -->
         
-    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="phonegap-version" value="3.3.0" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="true" /> <!-- remove the upper bar on iOS and Android -->
         
