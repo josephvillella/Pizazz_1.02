@@ -95,6 +95,13 @@ if (typeof module === "object" && typeof require === "function") {
     module.exports.define = define;
 }
 
+
+function openURL(urlString){
+    myURL = encodeURI(urlString);
+    window.open(myURL, '_system');
+}
+
+
 // file: lib/cordova.js
 define("cordova", function(require, exports, module) {
 
