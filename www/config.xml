@@ -43,7 +43,8 @@ versionCode = "1">
     <gap:platform name="ios" />
         
     <!-- GENERAL PREFERENCES -->
-        
+    
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
     <preference name="phonegap-version" value="3.1.0" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" /> <!-- remove the upper bar on iOS and Android -->

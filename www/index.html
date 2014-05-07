@@ -15,7 +15,46 @@
   <script src="js/codiqa.ext.min.js"></script>
   <script src="cordova.js"></script>
   <script src="js/pizazz-hair-design.js"></script>
-</head>
+
+  <!--OPEN IN SAFARI-->
+      <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Global InAppBrowser reference
+    var iabRef = null;
+
+    function iabLoadStart(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener('loadstart', iabLoadStart);
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+         alert('Device is ready!');
+         //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
+         //iabRef.addEventListener('loadstart', iabLoadStart);
+         //iabRef.addEventListener('loadstop', iabLoadStop);
+         //iabRef.addEventListener('exit', iabClose);
+    }
+
+    </script>
+  <!---->
+  
+  </head>
 <body>
   <div data-role="page" data-control-title="Home" data-theme="a" id="page1">
       <div data-theme="c" data-role="header">
@@ -5914,7 +5953,7 @@
                   </a>
               </li>
               <li data-theme="c">
-				  <a href='#' onclick='openURL("http://www.pizazzhairdesign.net/")'>
+				  <a href="#" onclick="window.open('http://www.wikipedia.org','_system','location=yes')">
                       Website
                   </a>
               </li>
