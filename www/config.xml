@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "it.venerons.APPLICATION"
+id = "com.codiqa.pizazz"
 version = "1.0.2"
 versionCode = "1">
 
@@ -61,6 +61,7 @@ versionCode = "1">
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" /> <!-- if set to false, the splash screen must be hidden using a JavaScript API -->
         
+	<gap:plugin name="com.phonegap.plugins.barcodescanner"/>
         
     <!-- PHONEGAP API FEATURES PREFERENCES -->
         
