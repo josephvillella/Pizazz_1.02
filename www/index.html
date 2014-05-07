@@ -15,7 +15,6 @@
   <script src="js/codiqa.ext.min.js"></script>
   <script src="cordova.js"></script>
   <script src="js/pizazz-hair-design.js"></script>
-  <script type="text/javascript" src="js/barcodescanner.js"></script>
 </head>
 <body>
   <div data-role="page" data-control-title="Home" data-theme="a" id="page1">
@@ -6414,31 +6413,31 @@
           <div style="" data-controltype="image">
               <img style="width: 137px; height: 53px" src="img/logo.png">
           </div>
-          <div data-controltype="htmlblock">
-              <p>
-                  <a href="#" class="topcoat-button" id="scan">
-                      SCAN
-                  </a>
-              </p>
-              <p id="info">
-              </p>
-              <h2>
-                  OPENING LINKS:
-              </h2>
-              <p>
-                  <a href="#" class="topcoat-button" onclick="window.open('http://www.nhl.com', '_blank', 'location=yes');">
-                      InAppBrowser
-                  </a>
-              </p>
-              <p>
-                  <a href="#" class="topcoat-button" onclick="window.open('http://www.nhl.com', '_system', 'location=yes');">
-                      System Browser
-                  </a>
-              </p>
-          </div>
-          <a data-role="button" href="<a href=&quot;#&quot; class=&quot;topcoat-button&quot; id=&quot;scan&quot;>SCAN</a>">
-              Scan
-          </a>
+          
+		  <!--Barcode-->
+		  <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <p><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
+            <p id="info"></p>
+            <h2>OPENING LINKS:</h2>
+            <p><a href="#" class="topcoat-button" onclick="window.open('http://www.nhl.com', '_blank', 'location=yes');">InAppBrowser</a></p>
+            <p><a href="#" class="topcoat-button" onclick="window.open('http://www.nhl.com', '_system', 'location=yes');">System Browser</a></p>
+            <p><a href="#" class="topcoat-button" onclick="window.open('http://www.yahoo.com', '_self', 'location=yes');">This Webview</a></p>
+            <p><a href="#" class="topcoat-button" onclick="window.plugins.childBrowser.showWebPage('http://www.nhl.com', {});">ChildBrowser</a></p>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="barcodescanner.js"></script>
+        <script type="text/javascript" src="childbrowser.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+		<!--/////-->
+		
       </div>
       <div data-role="tabbar" data-iconpos="top" data-theme="c">
           <ul>
